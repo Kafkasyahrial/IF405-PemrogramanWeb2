@@ -60,3 +60,19 @@ Menjadi:
 
 Dan akan muncul eror ketika menambahkan perangkat sebagai berikut:
 <img width="1272" height="442" alt="image" src="https://github.com/user-attachments/assets/9c236f0b-142b-4164-a2f2-50b110702909" />
+
+
+## 6. Kode Mysql di phpmyadmin
+Karena disini saya testing dengan xampp dan phpmyadmin bawaan saya menambhakan database dengan query berikut:
+
+```sql
+CREATE DATABASE IF NOT EXISTS db_kampus;
+USE db_kampus;
+
+CREATE TABLE IF NOT EXISTS perangkat (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama_perangkat VARCHAR(100) NOT NULL,
+    jenis VARCHAR(50) NOT NULL,
+    ip_address VARCHAR(50) NOT NULL,
+    lokasi VARCHAR(100) NOT NULL
+);
